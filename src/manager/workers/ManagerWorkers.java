@@ -7,8 +7,8 @@ import java.util.logging.Logger;
 public class ManagerWorkers {
     
     private static final int DURATION = 1000;
-    private static final Job MANAGE_JOB = ()-> System.out.printf("Thread %s working.\n\n", Thread.currentThread().getName());
-    private static final Job WORKER_JOB = ()-> System.out.printf("Thread %s working.\n", Thread.currentThread().getName());
+    private static final Job MANAGE_JOB = () -> System.out.printf("Thread %s working.\n\n", Thread.currentThread().getName());
+    private static final Job WORKER_JOB = () -> System.out.printf("Thread %s working.\n", Thread.currentThread().getName());
     
     private static void wait(Manager manager, int ms) throws InterruptedException {
         Thread.sleep(ms);
